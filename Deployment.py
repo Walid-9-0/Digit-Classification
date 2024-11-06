@@ -7,6 +7,7 @@ from tensorflow.keras.models import load_model
 
 # Load your trained model
 model = load_model("model.h5")
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # Define the filter (example: edge detection mask)
 mask = np.array([[-1, -1, -1],
