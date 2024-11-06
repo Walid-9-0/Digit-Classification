@@ -1,6 +1,6 @@
 streamlit
 opencv-python
-opencv-python==4.8.0
+cv2
 pandas
 numpy
 tensorflow
