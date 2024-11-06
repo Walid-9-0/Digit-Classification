@@ -13,13 +13,19 @@ mask = np.array([[-1, -1, -1],
                  [-1,  8, -1],
                  [-1, -1, -1]])
 
-st.title('Digit Classification')
+st.markdown("<h1 style='color: white;'>Digit Classification</h1>", unsafe_allow_html=True)
 st.markdown('---')
 
-st.markdown("""
-- Upload Image From Your PC
-- Press The Predict Button To Show Result
-""")
+st.markdown(
+    """
+    <p style="color: white;">
+    - Upload Image From Your PC<br>
+    - Press The Predict Button To Show Result
+    </p>
+    """, 
+    unsafe_allow_html=True
+)
+
 # Streamlit file uploader
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
@@ -51,7 +57,7 @@ if uploaded_file:
 
     if st.button("Predict",use_container_width=True):
         prediction = model.predict(image_array).argmax()
-        st.subheader(f"Predicted Digit: {prediction}")
+        st.markdown(f"<h2 style='color: #4a7c59;'>Predicted Digit: {prediction}</h2>", unsafe_allow_html=True)
 
 
 
