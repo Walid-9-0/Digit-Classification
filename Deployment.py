@@ -31,9 +31,11 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 
 if uploaded_file:
     # Open the uploaded image
-    image = Image.open(uploaded_file).convert("L")  # Convert to grayscale
-    image = image.resize((28, 28))  # Resize to 28x28
-    image_array = np.array(image) / 255.0  # Normalize the image
+    image = Image.open(uploaded_file)
+    image_array = image.convert("L")
+    image_array = image_array.resize((28, 28))  
+    image_array = np.array(image_array) / 255.0  
+
 
     # Apply the filter (convolution)
     image_array = cv2.filter2D(image_array, -1, mask)
@@ -53,7 +55,6 @@ if uploaded_file:
     ax[1].set_title('Filtered Image')
     ax[1].axis('off')
     st.pyplot(fig)
-
 
     if st.button("Predict",use_container_width=True):
         prediction = model.predict(image_array).argmax()
