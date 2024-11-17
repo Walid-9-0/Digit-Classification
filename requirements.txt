@@ -1,7 +1,5 @@
 numpy
 opencv-python
-opencv-python-headless
-cv2
 tensorflow
 matplotlib
 seaborn
