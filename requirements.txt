@@ -1,9 +1,6 @@
 numpy
 opencv-python
-opencv-python-headless
-tensorflow
-matplotlib
-seaborn
-scikit-learn
 Pillow
+matplotlib
 streamlit
+tensorflow
