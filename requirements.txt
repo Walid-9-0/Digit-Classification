@@ -1,12 +1,9 @@
 ﻿streamlit
+numpy
 opencv-python
 opencv-python-headless
 pillow
 tensorflow
-streamlit==1.25.0       # Streamlit for interactive dashboards
-opencv-python==4.8.0.76 # OpenCV for computer vision
-opencv-python-headless==4.8.0.76 # Optional for headless environments
-Pillow==9.3.0           # Image processing
-tensorflow==2.12.0      # TensorFlow for machine learning
-numpy==1.23.5           # TensorFlow and OpenCV dependency
-scikit-learn==1.2.2     # Machine learning library
+scikit-learn
+opencv-python==4.8.0.76
+opencv-python-headless==4.8.0.76
