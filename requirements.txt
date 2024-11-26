@@ -1,6 +1,6 @@
 ﻿streamlit
-opencv-python
+#opencv-python
 opencv-python-headless
 pillow
 tensorflow
-scikit-learn
+#scikit-learn
