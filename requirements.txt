@@ -3,7 +3,7 @@ opencv-python==4.10.0.84
 opencv-python-headless==4.10.0.84
 numpy==1.26.4
 pandas==2.1.1
-pillow==11.0.0
+pillow>=7.1.0
 scikit-learn==1.5.2
 streamlit==1.38.0
 tensorflow==2.18.0
